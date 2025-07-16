@@ -213,7 +213,7 @@ footer {
     font-size: 90%; 
   }
 }
-@media (max-width:546){
+@media (max-width:546px){
   .hero-content h1 {
     
     font-size: 1em;
