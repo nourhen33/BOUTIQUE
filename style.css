@@ -138,6 +138,11 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.produit:hover {
+  transform: translateY(-5px);
 }
 
 .produit img {
@@ -146,22 +151,60 @@ section h2 {
   object-fit: cover;
 }
 
-.produit h3 {
-  padding: 15px;
-  font-size: 1.1em;
+.card-content {
+  padding: 20px;
 }
-.produit button {
-  padding: 10px 20px;
+
+.produit h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-price {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #c8982a;
+  margin-bottom: 15px;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card-features li {
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+  position: relative;
+  padding-left: 20px;
+}
+
+.card-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #c8982a;
+  font-weight: bold;
+}
+
+.card-button {
+  padding: 12px 20px;
   background-color: #b4b929;
   color: white;
   border: none;
   border-radius: 5px;
- margin-bottom: 10px;
   cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.produit button:hover {
-  background-color: #b4b929;
+.card-button:hover {
+  background-color: #9ca025;
 }
 /* FOOTER */
 footer {
